@@ -11,100 +11,133 @@
     box-sizing:border-box;
 }
 
-html, body{
+html,
+body{
     width:100%;
-    height:180px;
+    height:140px;
     overflow:hidden;
+    background:#0f5a34;
     font-family:Segoe UI, Arial, sans-serif;
 }
 
 body{
-    background:linear-gradient(
-        90deg,
-        #0b4f2f 0%,
-        #16673c 50%,
-        #1f7f4c 100%
-    );
+    background:
+        linear-gradient(
+            90deg,
+            #0b4f2f 0%,
+            #14673d 40%,
+            #1d7a49 100%
+        );
 }
 
-.banner{
-    height:180px;
+.header{
     width:100%;
+    height:140px;
+
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:30px;
-    padding:0 40px;
+
+    padding:0 30px;
+
+    overflow:hidden;
 }
 
 .logo{
-    height:120px;
+    flex-shrink:0;
+}
+
+.logo img{
+    height:100px;
     width:auto;
-    object-fit:contain;
+    display:block;
 }
 
-.info{
+.content{
+    margin-left:25px;
     color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.titulo{
-    font-size:36px;
+.title{
+    font-size:30px;
     font-weight:700;
+    letter-spacing:.5px;
     line-height:1.1;
 }
 
-.subtitulo{
-    font-size:18px;
+.subtitle{
+    margin-top:6px;
+    font-size:14px;
+    letter-spacing:2px;
     opacity:.9;
-    margin-top:8px;
-    letter-spacing:1px;
+    text-transform:uppercase;
 }
 
-@media(max-width:768px){
+.decor{
+    margin-left:auto;
+    width:220px;
+    height:220px;
+    border-radius:50%;
 
-    html, body{
+    background:rgba(255,255,255,.08);
+
+    transform:translateX(80px);
+}
+
+@media (max-width:900px){
+
+    html,
+    body,
+    .header{
         height:120px;
     }
 
-    .banner{
-        height:120px;
-        gap:15px;
-    }
-
-    .logo{
+    .logo img{
         height:80px;
     }
 
-    .titulo{
+    .title{
         font-size:22px;
     }
 
-    .subtitulo{
+    .subtitle{
         font-size:12px;
+    }
+
+    .decor{
+        display:none;
     }
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="banner">
+<div class="header">
 
-    <img
-        class="logo"
-        src="https://raw.githubusercontent.com/vinirondon/maps/484a554247f37ba12d9631060dd4f187985df079/WhatsApp%20Image%202026-05-25%20at%2013.01.04.jpeg"
-        alt="DPE MT">
-
-    <div class="info">
-        <div class="titulo">
-            DEFENSORIA PÚBLICA<br>
-            DO ESTADO DE MATO GROSSO
-        </div>
-
-        <div class="subtitulo">
-            PAINEL ESTRATÉGICO DE INDICADORES
-        </div>
+    <div class="logo">
+        <img
+            src="https://raw.githubusercontent.com/vinirondon/maps/484a554247f37ba12d9631060dd4f187985df079/WhatsApp%20Image%202026-05-25%20at%2013.01.04.jpeg"
+            alt="DPE-MT">
     </div>
+
+    <div class="content">
+
+        <div class="title">
+            DEFENSORIA PÚBLICA DO ESTADO DE MATO GROSSO
+        </div>
+
+        <div class="subtitle">
+            Painel Estratégico de Indicadores
+        </div>
+
+    </div>
+
+    <div class="decor"></div>
 
 </div>
 
