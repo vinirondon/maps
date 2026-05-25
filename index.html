@@ -29,28 +29,47 @@ body{
     padding:0 20px;
 }
 
-.logo{
-    height:60px;
-    width:auto;
+.logo-container{
+    height:58px;
+    width:58px;
+
+    background:white;
+
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.12);
+
     flex-shrink:0;
 }
 
+.logo{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+}
+
 .content{
-    margin-left:15px;
+    margin-left:14px;
     color:white;
 }
 
 .title{
-    font-size:20px;
+    font-size:18px;
     font-weight:700;
     line-height:1;
 }
 
 .subtitle{
-    font-size:11px;
     margin-top:4px;
+    font-size:10px;
     letter-spacing:1px;
-    opacity:.9;
+    opacity:.85;
+    text-transform:uppercase;
 }
 </style>
 </head>
@@ -59,14 +78,21 @@ body{
 
 <div class="header">
 
-<img
-class="logo"
-src="https://raw.githubusercontent.com/vinirondon/maps/484a554247f37ba12d9631060dd4f187985df079/WhatsApp%20Image%202026-05-25%20at%2013.01.04.jpeg">
+    <div class="logo-container">
+        <img
+            class="logo"
+            src="https://raw.githubusercontent.com/vinirondon/maps/484a554247f37ba12d9631060dd4f187985df079/WhatsApp%20Image%202026-05-25%20at%2013.01.04.jpeg">
+    </div>
 
-<div class="content">
-<div class="title">DEFENSORIA PÚBLICA MT</div>
-<div class="subtitle">Painel Estratégico de Indicadores</div>
-</div>
+    <div class="content">
+        <div class="title">
+            Defensoria Pública MT
+        </div>
+
+        <div class="subtitle">
+            Painel Estratégico de Indicadores
+        </div>
+    </div>
 
 </div>
 
