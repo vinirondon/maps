@@ -1,143 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-*{
+html,body{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
     width:100%;
-    height:140px;
+    height:80px;
     overflow:hidden;
-    background:#0f5a34;
-    font-family:Segoe UI, Arial, sans-serif;
+    font-family:Segoe UI,Arial,sans-serif;
 }
 
 body{
-    background:
-        linear-gradient(
-            90deg,
-            #0b4f2f 0%,
-            #14673d 40%,
-            #1d7a49 100%
-        );
+    background:linear-gradient(
+        90deg,
+        #0b4f2f,
+        #16673c,
+        #1f7f4c
+    );
 }
 
 .header{
-    width:100%;
-    height:140px;
-
+    height:80px;
     display:flex;
     align-items:center;
-
-    padding:0 30px;
-
-    overflow:hidden;
+    padding:0 20px;
 }
 
 .logo{
+    height:60px;
+    width:auto;
     flex-shrink:0;
 }
 
-.logo img{
-    height:100px;
-    width:auto;
-    display:block;
-}
-
 .content{
-    margin-left:25px;
+    margin-left:15px;
     color:white;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
 }
 
 .title{
-    font-size:30px;
+    font-size:20px;
     font-weight:700;
-    letter-spacing:.5px;
-    line-height:1.1;
+    line-height:1;
 }
 
 .subtitle{
-    margin-top:6px;
-    font-size:14px;
-    letter-spacing:2px;
+    font-size:11px;
+    margin-top:4px;
+    letter-spacing:1px;
     opacity:.9;
-    text-transform:uppercase;
-}
-
-.decor{
-    margin-left:auto;
-    width:220px;
-    height:220px;
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    transform:translateX(80px);
-}
-
-@media (max-width:900px){
-
-    html,
-    body,
-    .header{
-        height:120px;
-    }
-
-    .logo img{
-        height:80px;
-    }
-
-    .title{
-        font-size:22px;
-    }
-
-    .subtitle{
-        font-size:12px;
-    }
-
-    .decor{
-        display:none;
-    }
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="header">
 
-    <div class="logo">
-        <img
-            src="https://raw.githubusercontent.com/vinirondon/maps/484a554247f37ba12d9631060dd4f187985df079/WhatsApp%20Image%202026-05-25%20at%2013.01.04.jpeg"
-            alt="DPE-MT">
-    </div>
+<img
+class="logo"
+src="https://raw.githubusercontent.com/vinirondon/maps/484a554247f37ba12d9631060dd4f187985df079/WhatsApp%20Image%202026-05-25%20at%2013.01.04.jpeg">
 
-    <div class="content">
-
-        <div class="title">
-            DEFENSORIA PÚBLICA DO ESTADO DE MATO GROSSO
-        </div>
-
-        <div class="subtitle">
-            Painel Estratégico de Indicadores
-        </div>
-
-    </div>
-
-    <div class="decor"></div>
+<div class="content">
+<div class="title">DEFENSORIA PÚBLICA MT</div>
+<div class="subtitle">Painel Estratégico de Indicadores</div>
+</div>
 
 </div>
 
